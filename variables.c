@@ -19,7 +19,7 @@ int main() {
 
     int age = 21; // integer
     float gpa = 2.05; //Floating  point number
-    char grade = 'C'; // Single Character
+    char grade = 101; // Single Character, 101 ASCII character => E
     
     // C is not object oriented Language
     // that's why there is no string datatypes
