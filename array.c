@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 int main() {
 
@@ -16,6 +17,9 @@ int main() {
 
     // 2D Array = an Array, where each element is an entire array
     // useful if u need a matrix, grid, or table of data
+
+    // mentioning length of rows in 2d array is optional 
+    // but complusory to mention length of columns in 2d array
 
     int numbers[3][3] = {
         {1,2,3},
@@ -37,6 +41,18 @@ int main() {
             printf("%d\t",numbers[i][j]);
         }
         printf("\n\n");
+    }
+
+    // Array of Strings ================= //
+
+    char cars[4][10] = {"Mustang","Corvette","Camaro"};
+
+    // Add
+    // cars[0] = "Tesla"; // Incorrect
+    strcpy(cars[3],"Tesla"); // Correct
+
+    for(int i = 0; i < sizeof(cars)/sizeof(cars[0]); i++) {
+        printf("%s\n",cars[i]);
     }
 
     return 0;
